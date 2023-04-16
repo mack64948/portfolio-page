@@ -1,0 +1,197 @@
+:root{
+    --very-dark-brown: #230000;
+    --dark-brown: #46220f;
+    --medium-brown: #704214;
+    --light-brown: #aa7444;
+    --very-light-brown: #e6aa77;
+
+    --preview-border-radius: 10px;
+}
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rye', cursive;
+
+}
+
+body{
+    background-color: var(--very-light-brown);
+
+}
+.parallax { 
+    background-image: url("./img/profile.png");
+    filter: sepia(100%);
+    height: 100%;
+    min-height: 600px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .intro-section{
+    width: 100%;
+    height: 400px;
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .intro-section p{
+    font-size: 40px;
+    color: white;
+  }
+
+  .intro-section > :first-child{
+    margin-top: 20px;
+  }
+
+  .intro-section > :last-child{
+   
+  }
+
+  .name-text{
+    color: var(--very-light-brown);
+    border-bottom: 2px solid var(--light-brown);
+  }
+
+  main{
+    position: relative;
+    padding: 30px 0;
+    background-color: var(--very-light-brown);
+  }
+
+.preview-gallery{
+    width: 100%;
+    height: 1000px;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--very-light-brown);
+
+}
+
+.card {
+    flex: 1 0 400px;
+    height: 300px;
+    position: relative;
+    transition: all .5s ease-in;
+    border-radius: var(--preview-border-radius);
+  }
+  
+  .card a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .card__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--preview-border-radius);
+
+  }
+  
+  .card__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: none;
+    transition: .5s ease;
+    background-color: var(--very-dark-brown);
+
+    border-radius: var(--preview-border-radius);
+
+  }
+  
+  .card:hover .card__overlay {
+    opacity: 1;
+  }
+  
+  .overlay__text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--very-light-brown);
+  }
+  
+
+  .overlay__text > :nth-child(2){
+    
+  }
+  .button {
+    border-radius: 10px;
+    background-color: var(--light-brown);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+  }
+
+.contact-container{
+    background-color: var(--very-light-brown);
+    bottom: -100px;
+    width: 100%;
+    height: 300px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .contact-container > :first-child{
+    font-size: 40px;
+  }
+
+  .contact-container > :first-child > :last-child{
+    font-size: 30px;
+    color: white;
+  }
+
+  .contact-container img{
+ 
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    height: auto;
+    border: thick solid var(--very-dark-brown);
+  }
+  
+  @media all and (max-width: 800px){
+    .card__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+  }
+
+  
+  
+  
+  
