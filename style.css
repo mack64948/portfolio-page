@@ -191,6 +191,7 @@ body{
     }
 
     .contact-container{
+        padding-top: 100px;
         flex-direction: column;
     }
   }
