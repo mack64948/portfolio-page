@@ -21,7 +21,7 @@ body{
 
 }
 .parallax { 
-    background-image: url("./img/profile.png");
+    background-image: url("./img/banner2.jpg");
     filter: sepia(100%);
     height: 100%;
     min-height: 600px;
@@ -46,7 +46,7 @@ body{
 
   .intro-section p{
     font-size: 40px;
-    color: white;
+    color: black;
   }
 
   .intro-section > :first-child{
@@ -58,8 +58,8 @@ body{
   }
 
   .name-text{
-    color: var(--very-light-brown);
-    border-bottom: 2px solid var(--light-brown);
+    color: black;
+    border-bottom: 2px solid black;
   }
 
   main{
